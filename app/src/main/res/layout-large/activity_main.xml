@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <fragment android:name="com.christian.domaindemo.PropListingsFragment"
+        android:id="@+id/listings_pane"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="@integer/listings_fragment_layout_weight"/>
+    <fragment android:name="com.christian.domaindemo.PropDetailsFragment"
+        android:id="@+id/details_pane"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="@integer/details_fragment_layout_weight"/>
+</LinearLayout>

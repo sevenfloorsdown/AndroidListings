@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_margin_bottom"
+    cardview:cardCornerRadius="@dimen/card_corner_radius"
+    cardview:cardElevation="@dimen/card_elevation"
+    cardview:cardUseCompatPadding="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/card_bar_width"
+        android:background="@drawable/item_selector">
+    </FrameLayout>
+
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/card_bar_width"
+        android:padding="@dimen/card_padding"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/prime_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            style="@android:style/Widget.ProgressBar.Large"
+            android:layout_margin="@dimen/card_image_spacing" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/prime_thumbnail"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_margin="@dimen/card_image_spacing" />
+
+        <ProgressBar
+            android:id="@+id/secondary_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            style="@android:style/Widget.ProgressBar.Large"
+            android:layout_margin="@dimen/card_image_spacing" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/second_thumbnail"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_margin="@dimen/card_image_spacing" />
+
+        <TextView
+            android:id="@+id/display_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnSpan="2"
+            android:layout_margin="@dimen/card_text_spacing"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceListItem"/>
+
+        <TextView
+            android:id="@+id/property_specs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_columnSpan="2"
+            android:layout_margin="@dimen/card_text_spacing"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/displayable_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:layout_columnSpan="2"
+            android:layout_margin="@dimen/card_text_spacing"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/agency_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:layout_margin="@dimen/card_text_spacing" />
+        <ImageButton
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/star"
+            android:background="@color/colorFaveBackground"
+            android:layout_margin="@dimen/card_image_spacing" />
+
+    </GridLayout>
+</android.support.v7.widget.CardView>

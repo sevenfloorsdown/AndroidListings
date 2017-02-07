@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Domain Demo</string>
+    <string name="default_feed">https://rest.domain.com.au/searchservice.svc/mapsearch?mode=buy&amp;sub=Bondi&amp;pcodes=2026&amp;state=NSW</string>
+    <string name="listings_results">ListingResults</string>
+    <string name="listings_element">Listings</string>
+    <string name="key_agency_logo_url">AgencyLogoUrl</string>
+    <string name="key_agency_color">AgencyColour</string>
+    <string name="key_bathrooms">Bathrooms</string>
+    <string name="key_bedrooms">Bedrooms</string>
+    <string name="key_carspaces">Carspaces</string>
+    <string name="key_display_price">DisplayPrice</string>
+    <string name="key_displayable_address">DisplayableAddress</string>
+    <string name="key_truncated_description">TruncatedDescription</string>
+    <string name="key_retina_display_thumb_url">RetinaDisplayThumbUrl</string>
+    <string name="key_second_retina_display_thumb_url">SecondRetinaDisplayThumbUrl</string>
+    <string name="key_is_elite">IsElite</string>
+    <string name="key_ad_id">AdId</string>
+    <string name="key_description">Description</string>
+    <string name="label_bed">bed</string>
+    <string name="label_bath">bath</string>
+    <string name="label_car">car</string>
+    <string name="label_zero_price">Price TBC</string>
+    <string name="label_zero_bed">Studio</string>
+    <string name="label_zero_bath">&#x200B;</string>
+    <string name="label_zero_car">&#x200B;</string>
+    <string name="label_separator">,</string>
+    <string name="not_found_text">-</string>
+    <string name="no_data_message">No data available</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="com.christian.domaindemo.PropListingsFragment"
+    android:id="@+id/recycler_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/recycler_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/gen_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:padding="@dimen/card_padding" />
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/property_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </android.support.v7.widget.RecyclerView>
+    <include layout="@layout/app_toolbar"/>
+</android.support.design.widget.CoordinatorLayout>
